@@ -1,0 +1,22 @@
+void main() {
+  
+  print(stringToInt('e'));
+
+}
+
+int stringToInt(String texto) {
+  
+  int value;
+  
+  try{
+    value = int.parse(texto);
+
+} catch (e)  {
+    
+   throw Exception('Não foi digitado número inteiro');
+
+  }
+  
+  return value;
+  
+}
